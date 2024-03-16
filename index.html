@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Office of the Chief Accounts Officer Pension and Fund Management</title>
+	<!--meta-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="Construction, Renovation" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" href="C:\Users\admin\Documents\MERN\mynewproject\ASSETS\CSS\bootstrap.css">
+	<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css" rel="stylesheet"
+		type="text/css" />
+	<!--slider revolution-->
+	<link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css">
+	<!--style-->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/superfish.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.qtip.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/customdiv.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/odometer-theme-default.css">
+
+	<!--modal Report -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<style>
+		small.small {
+			font-size: 10px;
+			color: black
+		}
+
+		.total-visit {
+			text-align: center;
+			padding: 5px;
+			display: block;
+			margin-top: 100px;
+			color: #0064b3;
+		}
+		.total-visit-2{
+			text-align: center;
+			padding: 5px;
+			display: block;
+			margin-top: 15px;
+			color: #0064b3;
+		}
+		.total-visit-2-since{
+			text-align: center;
+			padding: 5px;
+			display: block;
+			margin-top: 15px;
+			color: black;
+		}
+		.carousel-inner img {
+			width: 100%;
+			height: 100%;
+			/*margin-top: 18px;*/
+		}
+
+		.announcement {
+			width: 77%;
+		}
+
+		/* Example 2 (login form) */
+		.login_form.modal {
+			border-radius: 0;
+			line-height: 18px;
+			padding: 0;
+			font-family: "Lucida Grande", Verdana, sans-serif;
+		}
+		.login_form h3 {
+			margin: 0;
+			padding: 10px;
+			color: #fff;
+			font-size: 14px;
+			background: rgb(75, 144, 123);
+			background: -moz-linear-gradient(-45deg, rgba(75, 144, 123, 1) 4%, rgba(68, 206, 155, 1) 100%);
+			background: -webkit-linear-gradient(-45deg, rgba(75, 144, 123, 1) 4%, rgba(68, 206, 155, 1) 100%);
+			background: linear-gradient(135deg, rgba(75, 144, 123, 1) 4%, rgba(68, 206, 155, 1) 100%);
+		}
+		.login_form.modal p {
+			padding: 20px 30px;
+			border-bottom: 1px solid #ddd;
+			margin: 0;
+			background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));
+			overflow: hidden;
+		}
+		.login_form.modal p:last-child {
+			border: none;
+		}
+		.login_form.modal p label {
+			float: left;
+			font-weight: bold;
+			color: #333;
+			font-size: 13px;
+			width: 130px;
+			line-height: 22px;
+		}
+		.login_form.modal p input[type="text"],
+		.login_form.modal p input[type="password"] {
+			font: normal 12px/18px "Lucida Grande", Verdana;
+			padding: 3px;
+			border: 1px solid #ddd;
+			width: 200px;
+		}
+		.part {
+			display: none;
+		}
+		.modal p {
+			margin: 1em 0;
+		}
+		.modal a.close-modal {
+			border: none;
+		}
+		.jquery-modal {
+			z-index: 99999 !important;
+		}
+		.view-all {
+			float: right;
+		}
+
+		.box-information {
+			/* background-color: lightgrey; */
+			width: 300px;
+			border: 2px solid red;
+			padding: 25px;
+			/* margin: 25px;
+			margin: auto; */
+		}
+		.slider-container .col-7-7 {
+			margin-left: 0;
+		}
+
+		h4.box-header {
+			font-size: 1.4rem
+		}
+		.row_test {
+			display: flex;
+		}
+		/* Create two equal columns that sits next to each other */
+		.column_two {
+			flex: 70%;
+			padding: 10px;
+			height: 90px;
+			/* Should be removed. Only for demonstration */
+		}
+		.column_one {
+			flex: 30%;
+			/*padding: 10px;*/
+			height: 110px;
+			/* Should be removed. Only for demonstration */
+		}
+		.death-div {
+			text-align: right;
+			padding: 8px;
+			vertical-align: middle;
+		}
+		.death-lebel {
+			color: #0064b3;
+			/* margin-right: 6px; */
+			width: 78px;
+			text-align: left;
+		}
+		.death-input {
+			width: 278px;
+			border-radius: 6px;
+		}
+		.button {
+			border: none;
+			color: white;
+			padding: 12px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.button2 {
+			background-color: #0064b3;
+		}
+		.input-icons i {
+			position: absolute;
+			margin-left: -54px;
+		}
+		.icon {
+			padding: 10px;
+			color: #0064b3;
+			min-width: 50px;
+			text-align: center;
+		}
+		.input-field {
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+		}
+		.floating_menu {
+			display: block;
+			position: fixed;
+			top: 70%;
+			right: 0;
+			z-index: 1000;
+		}
+		.floating_menu a {
+			display: block;
+			position: relative;
+			background: #0D71BA;
+			margin-bottom: 1px;
+			padding: 5px 10px;
+			border-radius: 25px 0 0 25px;
+			font-size: 1.15em;
+			line-height: 1.2em;
+			color: #fff;
+			text-align: right;
+			text-decoration: none;
+			right: calc(-100% + 55px);
+			transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-webkittransition: all 0.5s ease-in-out;
+		}
+		.floating_menu a:after {
+			display: inline-block;
+			font-family: "Ionicons";
+			width: 30px;
+			font-size: 1.5em;
+			text-align: center;
+			vertical-align: middle;
+			margin-left: 15px;
+		}
+		.floating_menu a:hover {
+			right: 0;
+		}
+		.buttonShow {
+		  display: none;
+		}
+
+	</style>
+</head>
+
+<body class="pattern-1">
+	<div class="floating_menu">
+		<a href="#" type="submit" id="contact" value="Click Here"><img src="assets/images/hl.png"> &nbsp; Click for
+			Help</a>
+	</div>
+
+
+	<div class="site-container">
+		<div class="header-container">
+		<div class="vertical-align-table column-1-1">
+			<div class="header clearfix">
+				<div class="logo vertical-align-cell">
+					 <img src="assets/images/logo.png" style="width: 100%" class="img-responsive">
+				</div>
+				<a href="#" class="mobile-menu-switch vertical-align-cell" id="m_menu">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</a>
+				<div class="menu-container clearfix vertical-align-cell">
+					<nav>
+						<ul class="sf-menu">
+							<li class='selected'>
+								<a href="index.html" title="Home">Home</a>
+							</li>
+							<li>
+								<a href="#" title="About us">About Us</a>
+								    <ul>
+									  	<li><a href="about-us.php" title="Mission vision"> Brief History</a></li>
+									  	<li><a href="vision-mission.php" title="Mission vision"> Vision & Mission</a></li>
+										<li><a href="assets/pdf/PensionFundManagement_APA.pdf" title="Annual performance Agreement(APA)"> Annual performance Agreement(APA)</a></li>
+										<li><a href="assets/pdf/PensionFundManagement_APP.pdf" title="Annual Procurement Plan(APP)"> Annual Procurement Plan(APP)</a></li>
+                                        <li><a href="pension-management.php" title="Our Works"> Functional Areas</a></li>
+                                        <li><a href="#"> OPFM Setup</a>
+									  	    <ul>
+									  	    	<li><a href='grade-scale.php'><span>Organogram</span></a></li>
+									  	    	<li><a href='grade-structure.php'><span>Organizational Structure</span></a></li>
+									  	    </ul>
+                                        </li>
+                                        <li><a href="#" title="Mission vision"> CAFO</a>
+                                            <ul>
+                                                <li><a href='profile-cafo.php'><span>CAFO Profile</span></a></li>
+                                                    <li><a href="cao-message.php" title="Mission vision">Message from CAFO</a></li>
+                                                    <li><a href='formar-caos.php'><span>Former Office Heads</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="employee-info.php" title="Mission vision">Personnel</a></li>
+								</ul>
+									  </li>
+									  <li>
+									  	<a href="#" title="References">References</a>
+									  	<ul>			
+									  		<li><a href="ref-pension-act.php" title="Pension files">Pension</a></li>
+									  		<li><a href="ref-gpf-act.php" title="">GPF </a></li>
+									  		<li><a href="#" title="">Others</a></li>
+									  	</ul>
+									  </li>
+  									<li>
+									  	<a href="employee-retire-pension.php" title="Rules">Forms</a>
+									  	<ul>
+									  		<li><a href="employee-retire-pension.php" title="Pension files">Pension</a></li>
+									  		<li><a href="gpf-form.php" title="">GPF </a></li>
+									  		<li><a href="#" title="">Others</a></li>
+									  	</ul>
+									  </li>
+									  <li><a href="#" title="Projects">FAQ</a>
+									  <ul>
+									  		<li><a href="faq.php" title="Pension files">Pension</a></li>
+									  		<li><a href="gpf-faq.php" title="">GPF </a></li>
+									  		<li><a href="#" title="">Others</a></li>
+									  	</ul>
+									  </li>
+									  <li><a href="contact.php" title="Projects">Contact us</a></li>
+									</ul>
+									<ul id="main_menu" class="nav">
+										<li class="one-level"><a href="index.php" target="_top">Home</a>
+											<li class="dropdown"><a href="#" target="_top" class="parent">About Us <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
+												<div class="sub-menu-content">
+													<ul class="sub-menu ir">
+														
+														<li><a href="about-us.php" title="Mission vision"> Brief History</a></li>
+												  		<li><a href="vision-mission.php" title="Mission vision"> Vision & Mission</a></li>					  		
+												  		
+												  		<li><a href="pension-management.php" title="Our Works"> Functional Areas</a></li>
+
+												  			<li><a href="#" target="_top" class="fmenu parent">OPFM Setup <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+												  			<ul class="sub-menu-lv3">
+												  				<li><a href='grade-scale.php'><span>Organogram</span></a></li>
+												  				<li><a href='grade-structure.php'><span>Organizational Structure</span></a></li>
+												  			</ul>
+												  		</li>
+												  		<!-- <li><a href="pension-manage.php" title="Our Works"> What we do?</a></li> -->
+												  		<li><a href="#" target="_top" class="fmenu parent">CAFO<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+												  			<ul class="sub-menu-lv3">
+												  				<li><a href='profile-cafo.php'><span>CAFO Profile</span></a></li>
+												  				<li><a href="cao-message.php" title="Mission vision">Message from CAFO</a></li>
+												  				<li><a href='formar-caos.php'><span>Former Office Heads</span></a></li>
+												  			</ul>
+												  		</li>
+												  		<li><a href="employee-info.php" title="Mission vision">Personnel</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="dropdown"><a href="#" target="_top" class="parent">References <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
+												<div class="sub-menu-content">								
+														<ul class="sub-menu ir">
+													  		<li><a href="ref-pension-act.php" title="Pension files">Pension</a></li>
+													  		<li><a href="ref-gpf-act.php" title="">GPF </a></li>
+													  		<li><a href="#" title="">Others</a></li>
+													  	</ul>
+												</div>
+											</li>
+
+											<li class="dropdown"><a href="#" target="_top" class="parent">Forms <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
+												<div class="sub-menu-content">
+													<ul class="sub-menu ir">
+														<li><a href="employee-retire-pension.php" title="Pension files">Pension</a></li>
+												  		<li><a href="gpf-form.php" title="">GPF </a></li>
+												  		<li><a href="#" title="">Others</a></li>
+													</ul>
+												</div>
+											</li>
+
+									<li class="dropdown"><a href="#" target="_top" class="parent">FAQ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
+												<div class="sub-menu-content">
+													<ul class="sub-menu ir">
+														<li><a href="faq.php" title="Pension files">Pension</a></li>
+												  		<li><a href="gpf-faq.php" title="">GPF </a></li>
+												  		<li><a href="#" title="">Others</a></li>
+													</ul>
+												</div>
+											</li>
+
+									  <li class="one-level"><a href="contact.php" target="_top">Contact us</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		<div class="slider-container">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+					<li data-target="#demo" data-slide-to="3"></li>
+					<li data-target="#demo" data-slide-to="4"></li>
+					<li data-target="#demo" data-slide-to="5"></li>
+					<li data-target="#demo" data-slide-to="6"></li>
+					<li data-target="#demo" data-slide-to="7"></li>
+					<li data-target="#demo" data-slide-to="8"></li>
+					<li data-target="#demo" data-slide-to="9"></li>
+				</ul>
+
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="opfm.php">
+							<img src="assets/images/slider/pension-banner.jpg" alt="pension-banner">
+						</a>
+					</div>
+
+				</div>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+		<p class="headline">
+			Journey Towards Hassle-free Pension
+			<br/>
+			<marquee behavior="scroll" id="notice-load" direction="left" scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()"></marquee>
+		</p>
+
+		<div class="theme-page">
+			<div class="clearfix">
+				<div class="row  row-4-4" style="margin-bottom: 50px">
+					<div class="column col-3-4-4 col-sm-1024-3 col-sm-736-12 bgboss_version_two">
+						<ul class="features-list big">
+							<li class="sl-large-eco">
+								<div class="ornament"></div>
+								<h4 class="box-header page-margin-top">Pension Payment<br> Information</h4>
+								<p>To get Pension Payment Information <br> please click on the <br>following
+									button&nbsp;</p>
+								<br><br>
+								<p><input type="submit" class="view-all more" id="eppoInfo" value="Click Here" /></p>
+
+								<span class='total-visit'>Total Visit: <span class='ppi-count'> - </span></span><small class='small'>Since Feb 26, 2024</small>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="column col-3-4-4 col-sm-1024-3 col-sm-736-12 bgboss_version_two">
+						<ul class="features-list big">
+							<li class="sl-large-house-1">
+								<div class="ornament"></div>
+								<h4 class="box-header page-margin-top">Pension Proccess<br> Apply</h4>
+								<p>To get pension <br>  please click on the <br> following button<br>&nbsp;</p>
+								<br><br>
+								<p><input type="submit" class="view-all more" id="gpf" value="Click Here" /></p>
+								<span class='total-visit'>Total Visit: <span class='gi-count'> - </span></span><small class='small'>Since Sep 26, 2021</small>
+							</li>
+						</ul>
+					</div>
+
+
+
+					<div class="column col-3-4-4 col-sm-1024-3 col-sm-736-12 bgboss_version_two">
+						<ul class="features-list big">
+							<li class="sl-large-garage">
+								<div class="ornament"></div>
+								<h4 class="box-header page-margin-top">Grievance Redress<br>System</h4>
+								<p>To enter into <br>Grievance Redress <br> System click on the <br>following button</p>
+								<br><br>
+								<p><input type="submit" class="view-all more" id="grievance" value="Click Here" /> </p>
+								<span class='total-visit'>Total Visit: <span class='grs-count'> - </span></span><small class='small'>Since Sep 26, 2021</small>
+								<!-- </form> -->
+							</li>
+						</ul>
+					</div>
+
+					<div class="column col-3-4-4 col-sm-1024-3 col-sm-736-12 col-sm-height-736-auto bgboss_version_two">
+						<div class="bgbtn_home_profile">
+							<div class="row_test">
+								<div class="column_one" style="background-color:#fff;">
+									<img alt="Curtis Greene" src="assets/images/cga_nurul_islam.jpg">
+								</div>
+								<div class="column_two" style="background-color:#fff;">
+									<h6>Md.Nurul Islam</h6>
+									<p style="padding: 0px; font-size: 14px;font-weight: 100;">Comptroller and Auditor
+										General of Bangladesh</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="bgbtn_home_profile">
+							<div class="row_test">
+								<div class="column_one" style="background-color:#fff;">
+									<img alt="Khairuzzaman" src="assets/images/KhairuzzamanMozumder.jpg">
+								</div>
+								<div class="column_two" style="background-color:#fff;">
+									<h6>Dr. Md. Khairuzzaman Mozumder</h6>
+									<p style="padding: 0px; font-size: 14px;font-weight: 100;">Secretary<br>Ministry of Finance</p>
+								</div>
+							</div>
+						</div>
+						<div class="bgbtn_home_profile" style=" margin-top: 8px;">
+							<div class="row_test">
+								<div class="column_one" style="background-color:#fff;">
+									<img alt="Abul Kalam Azad" src="assets/images/cga_abdul_kalam_azad.jpg">
+								</div>
+								<div class="column_two" style="background-color:#fff;">
+									<h6>Abul Kalam Azad</h6>
+									<p style="padding: 0px; font-size: 14px;font-weight: 100;">Controller General of
+										Accounts</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bgbtn_home_profile" style=" margin-top: 8px;">
+							<div class="row_test">
+								<div class="column_one" style="background-color:#fff;">
+									<img alt="Curtis Greene" src="assets/images/cafo_mamun-ul-mannan.jpg">
+								</div>
+								<div class="column_two" style="background-color:#fff;">
+									<h6>Md. Mamun-Ul-Mannan</h6>
+									<p style="padding: 0px; font-size: 14px;font-weight: 100;">Chief Accounts and
+										Finance Officer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row full-width gray">
+					<div class="row" style="padding-top:20px; margin-bottom: 50px">
+						<div class="row full-width">
+							<div class="column column-1-3 col-sm-736-12">
+								<h4 class="box-header" style="text-align: center; font-size: 21px;">Notice Board</h4>
+								<br><br>
+
+								<div class="bgbtn"><a href="notice-board.php">Office Orders</a></div>
+								<div class="bgbtn"><a href="urgent-notice-one.php">Pension related Urgent Notice</a>
+								</div>
+								<div class="bgbtn"><a href="urgent-notice-gpf.php">GPF Related Urgent Notice</a></div>
+								<div class="bgbtn"><a href="form-download.php">Pension Problem Related Application
+										Form</a></div>
+								<div class="bgbtn"><a href="award-letter.php">Award Letter</a></div>		
+								<div class="bgbtn">
+									<a href="pension-calculator.php">Pension Calculator</a><br/>
+									<span class='total-visit-2'>Total Visit: <span class='pc-count'> - </span><br><small class='small'>Since Sep 26, 2021</small></span>
+								</div>
+
+							</div>
+
+
+							<div class="column column-1-3 col-sm-736-12">
+								<h4 class="box-header" style="text-align: center; font-size: 21px;">National Priority
+								</h4>
+
+								<br><br>
+								<div class="bgbtn"><a href="citizen-charter.php">Citizens Charter</a></div>
+								<div class="bgbtn"><a href="rti-law.php">Right to Information</a></div>
+								<div class="bgbtn"><a href="nis-plan.php">National Integrity Strategy</a></div>
+								<div class="bgbtn"><a href="innovation-guideline.php">Innovation Activities</a></div>
+								<div class="bgbtn"><a href="photo-gallery.php">Gallery</a></div>
+								<div class="bgbtn"><a href="video-gallery.php">Video Gallery</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form action="gpf-info.php" method="POST" class="login_form modal" id="gpf" style="display:none;">
+					<h3>Individual GPF Information</h3>
+					<p><label>NID/GPF Number:</label><input type="text" name="NID" />
+						<input type="hidden" name="fiscalYear" value="2018-19">
+					</p>
+					<p><input type="submit" class="view-all more" value="Submit" /></p>
+				</form>
+
+				<!-- Modal HTML EPPO -->
+				<form action="eppo-info.php" method="POST" class="login_form modal" id="eppo" style="display:none;">
+					<h3>Individual Pensioner information</h3>
+					<p><label>NID Number:</label><input type="text" name="NID" /></p>
+					<p><input type="submit" class="view-all more" value="Submit" /></p>
+				</form>
+
+				<!-- Modal HTML GRS -->
+				<form action="grievance.php" class="login_form modal" id="grs" style="display:none;">
+					<h3>Grievance Redress System</h3>
+					<p><label>NID Number:</label><input type="text" required /></p>
+					<p><input type="submit" class="view-all more" value="Submit" /></p>
+				</form>
+		</div>
+
+		<div class="row yellow full-width padding-top-bottom-30">
+	<div class="row">
+		<div class="column column-1-3">
+			<ul class="contact-details-list">
+				<li class="sl-small-phone">
+					<p>Phone:<br>
+						+880 9609 000 555<br>
+						+8802-41030290, +8802-41030296
+					</p>
+				</li>
+			</ul>
+		</div>
+		<div class="column column-1-3">
+			<ul class="contact-details-list">
+				<li class="sl-small-location">
+					<p>
+						Hishab Bhaban (3<sup>rd</sup> Floor)<br>Segunbagicha, Dhaka-1000 <br>
+						Open (09:00 AM to 05:00 PM)
+					</p>
+				</li>
+			</ul>
+		</div>
+		<div class="column column-1-3">
+			<ul class="contact-details-list">
+				<li class="sl-small-mail">
+					<p>E-mail:
+						<a href="mailto:pfmcafo@cga.gov.bd" style="font-weight: 100">pfmcafo@cga.gov.bd</a>
+						<br>
+						Web:
+						<a href="http://www.cafopfm.gov.bd" style="font-weight: 100">www.cafopfm.gov.bd</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="row align-center padding-top-bottom-30">
+	<div >
+		<ul >
+			<li style="text-align: center; padding: 8px;">
+				<span>Total Visit:</span>
+			<img style="margin-bottom: -6px" src="https://hitwebcounter.com/counter/counter.php?page=7443673&style=0006&nbdigits=6&type=page&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+			</li>
+		</ul>
+ </div>
+
+	<div class="SocialMedia">
+		<ul class="social-icons">
+			<li>
+				<h3>Stay in the loop:</h3>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.facebook.com/CAO-Pension_and_Fund_Management"
+					class="social-facebook" title="facebook"></a>
+			</li>
+			<li>
+				<a target="_blank" href="https://twitter.com/CAFO_PFM" class="social-twitter" title="twitter"></a>
+			</li>
+			<li>
+				<a target="_blank" href="https://youtube.com/channel/UCjY_x5cXCgOnXXn5QYfWLwg"
+					class="social-youtube" title="youtube"></a>
+			</li>
+		</ul>
+	</div>
+	<div class="FooTerTex"><span class="copyright">© 2024 Office of the Chief Accounts & Finance Officer, Pension and Fund Management, All rights reserved. </span></div>
+</div>
+</div>
+</body>
+</html>

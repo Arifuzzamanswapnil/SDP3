@@ -1,0 +1,163 @@
+/*.row.equal-heights [class*="col-"] {
+    border: .5px solid white;
+    padding:0;
+    width: 250px;
+
+}
+.box {
+	width: 700px;
+  
+}
+
+@media (min-width:768px) { 
+    .row.equal-heights {
+        width: 100%;
+        margin: 0 auto;
+        height: 120px;
+        display: table;
+    }
+    .row.equal-heights [class*="col-"] {
+        height: 100%;
+        float: none;
+        display: table-cell;
+    }
+    .row.equal-heights .box {
+        height: 25%;
+        padding: 4px 0px 0px 20px;
+    }
+}*/
+
+.wrapperDiv {
+    position: relative;
+  }
+  .table {
+    display: table;
+  }
+  .Tablerow {
+    display: table-row;
+  }
+  .Tablecell {
+    border: 2px solid #54FF93;
+    display: table-cell;
+  }
+  .Tablecell.empty
+  {
+    border: none;
+    width: 150px;
+  }
+  .Tablecell.rowspanned {
+    border: 2px solid #54FE43;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    bottom: 0;
+  }
+  .calculator-tab-pension {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .calculator-tab-pension a {
+    text-align: center;
+  }
+
+  .calculator-heading h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .pension-calculator .grade {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 12px;
+  }
+  /* .column-1-4 {
+    width: 280px;
+  } */
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -50px;
+  }
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+  .calculator-table td {
+    text-align: center !important;
+  }
+  .print-option {
+    float: right;
+    padding: 2px 23px 4px;
+    font-size: 1.0625em;
+  }
+  .active {
+    background:green;text-align:center'
+  }
+  .not-active{
+    background:red;text-align:center;
+  }
+  .active,  .not-active {
+    text-align: center !important;
+  }
+  .color-white {
+    color: white;
+    font-weight: bold;
+  }
+  .swal2-close {
+    color: red !important;
+    font-size: 3.5em !important;
+  }
+  .print-time {
+    display: none;
+  }
+  .print-option {
+    border-radius: 0px;
+  }
+  .result-button-calculator {
+    color: #FFF;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: "Segoe UI Regular";
+    font-size: 12px;
+    font-weight: 700;
+    background: #2361ae;  
+    text-align: center;
+    cursor: pointer;
+    line-height: normal;
+    padding: 11px;
+    border-radius: 4px;
+  }
+  .eppo-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .pop-up label{
+    color: #0064b3;
+}
+
+  .required {
+    color: red;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 768px) { 
+    .pension-calculator .grade {
+      width: 100%;
+    }
+    .alert {
+      width: 100%;
+    }
+  }
