@@ -105,7 +105,7 @@ blockquote {
 blockquote:before {
 	display: block;
 	font-size: 48px;
-	color: #2361ae;
+	color: #e61414;
 	text-align: left;
 	margin-bottom: 10px;
 }
